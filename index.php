@@ -1,59 +1,62 @@
-<?php
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>УСЛОЖНЕННОЕ ЗАДАНИЕ:</h1>
+    <h2>
+    <?php
 
-$a = 10;
-$b = 5;
+  $GET_POST = ['Метод GET отправляет скрипту всю собранную информацию формы как часть URL', 'Метод POST передает данные таким образом, что пользователь сайта уже не видит передаваемые скрипту данные'];
+  echo '<pre>';
+  print_r($GET_POST);
+    ?>
+    </h2>
+        <hr>
+        <h1>GET - запрос:</h1>
+    <h2>
+        <form action="" method="get">
+            <input type="text" name="name" placeholder="Имя">
+            <input type="text" name="surname" placeholder="Фамилия">
+            <input type="number" name="age" placeholder="Возраст">
+            <button type="submit">ОК!</button>
+        </form>
+        <?php
+        $name = $_GET['name'];
+        $surname = $_GET['surname'];
+        $age = $_GET['age'];
+        echo "Привет, меня зовут $name $surname, мой возраст $age лет (года)!";
+        ?>
+    </h2>
 
-$c = $a + $b;
-$d = $a - $b;
-$e = $a * $b;
-$f = $a / $b;
-$g = $a % $b;
+    <hr>
 
-echo $c;
-echo "<br/>";
-echo $d;
-echo "<br/>";
-echo $e;
-echo "<br/>";
-echo $f;
-echo "<br/>";
-echo $g;
-
-$x = 2;
-$y = 5;
-$a = 4;
-$b = 0.5;
-$c = 3;
-
-echo "<br/>";
-echo "<br/>";
-$expression = ($x / $y + $a * $b) - ($c - $x) / $y;
-echo $expression;
-
-
-echo "<br/>";
-echo "<br/>";
-
-
-function myfunc($a, $b, $c=100){
-    $res1 = $a + $b + $c;
-    $res2 = $a - $b;
-    $res3 = $res1 / $res2;
-    $res4 = $res3 * $c;
-    $array = [1 => $res1, 2 => $res2, 3 => $res3, 4 => $res4];
-    return $array;
-}
-
-$result = myfunc ('450','30');
-echo '<pre>';
-print_r($result);
-
-
-
-
+    <h1>POST - запрос:</h1>
+    <h2>
+        <form action="" method="post">
+            <input type="text" name="name" placeholder="Имя">
+            <input type="text" name="surname" placeholder="Фамилия">
+            <input type="number" name="age" placeholder="Возраст">
+            <button type="submit">ОК!</button>
+        </form>
+        <?php
+        $name = $_POST['name'];
+        $surname = $_POST['surname'];
+        $age = $_POST['age'];
+        echo "Привет, меня зовут $name $surname, мой возраст $age лет (года)!";
 
 
+        ?>
+    </h2>
 
-?>
+</body>
+</html>
+
+
 
 
