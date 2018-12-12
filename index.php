@@ -1,62 +1,86 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>УСЛОЖНЕННОЕ ЗАДАНИЕ:</h1>
-    <h2>
-    <?php
+<?PHP
+    echo "<table>";
 
-  $GET_POST = ['Метод GET отправляет скрипту всю собранную информацию формы как часть URL', 'Метод POST передает данные таким образом, что пользователь сайта уже не видит передаваемые скрипту данные'];
-  echo '<pre>';
-  print_r($GET_POST);
-    ?>
-    </h2>
-        <hr>
-        <h1>GET - запрос:</h1>
-    <h2>
-        <form action="" method="get">
-            <input type="text" name="name" placeholder="Имя">
-            <input type="text" name="surname" placeholder="Фамилия">
-            <input type="number" name="age" placeholder="Возраст">
-            <button type="submit">ОК!</button>
-        </form>
-        <?php
-        $name = $_GET['name'];
-        $surname = $_GET['surname'];
-        $age = $_GET['age'];
-        echo "Привет, меня зовут $name $surname, мой возраст $age лет (года)!";
-        ?>
-    </h2>
+    for($i = 1; $i <= 10; $i++) {
+        echo'<tr>';
+        for($j = 1; $j <= 10; $j++)
+            echo '<td style="border: solid black 1px">',$j?$i?$i*$j:$j:$i,'</td>';
+        echo'</tr>';
+    }
 
-    <hr>
-
-    <h1>POST - запрос:</h1>
-    <h2>
-        <form action="" method="post">
-            <input type="text" name="name" placeholder="Имя">
-            <input type="text" name="surname" placeholder="Фамилия">
-            <input type="number" name="age" placeholder="Возраст">
-            <button type="submit">ОК!</button>
-        </form>
-        <?php
-        $name = $_POST['name'];
-        $surname = $_POST['surname'];
-        $age = $_POST['age'];
-        echo "Привет, меня зовут $name $surname, мой возраст $age лет (года)!";
+    echo "</table>";
 
 
-        ?>
-    </h2>
-
-</body>
-</html>
+    echo "<br><h1>Таблица умножения как в школе:</h1><br>";
 
 
+for ($num1 = 1; $num1 <= 10; $num1++) {
+     echo "2 x $num1 = ", 2 * $num1 . "<br>";
+ }
+
+echo'<br>';
+for ($num1 = 1; $num1 <= 10; $num1++) {
+     echo "3 x $num1 = ", 3 * $num1 . "<br>";
+ }
+
+echo'<br>';
+for ($num1 = 1; $num1 <= 10; $num1++) {
+    echo "4 x $num1 = ", 4 * $num1 . "<br>";
+}
+
+echo'<br>';
+for ($num1 = 1; $num1 <= 10; $num1++) {
+    echo "5 x $num1 = ", 5 * $num1 . "<br>";
+}
+
+echo'<br>';
+for ($num1 = 1; $num1 <= 10; $num1++) {
+    echo "6 x $num1 = ", 6 * $num1 . "<br>";
+}
+
+echo'<br>';
+for ($num1 = 1; $num1 <= 10; $num1++) {
+    echo "7 x $num1 = ", 7 * $num1 . "<br>";
+}
+
+echo'<br>';
+for ($num1 = 1; $num1 <= 10; $num1++) {
+    echo "8 x $num1 = ", 8 * $num1 . "<br>";
+}
+
+echo'<br>';
+for ($num1 = 1; $num1 <= 10; $num1++) {
+    echo "9 x $num1 = ", 9 * $num1 . "<br>";
+}
 
 
+echo "<br><h1>Бесконечный цикл:</h1><br>";
+
+$a = 1;
+$b = 1;
+
+//while (true) {
+//    echo $a *= $b;
+//
+//}
+
+//for (; ;) {
+//    if ($a == 100) {
+//        break;
+//    }
+//    echo $a . "<br>";
+//    $a++;
+//}
+
+
+echo'<br>';
+
+while ($b == 100) {
+
+    echo $b . "<br>";
+    $b++;
+}
+
+
+
+?>
