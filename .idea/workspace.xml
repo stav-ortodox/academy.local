@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fa8e7b65-eb4d-42a5-84f7-6c29d96e2f36" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/index_les5.1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-    </list>
+    <list default="true" id="fa8e7b65-eb4d-42a5-84f7-6c29d96e2f36" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +168,7 @@
       <workItem from="1544426921355" duration="20102000" />
       <workItem from="1544511028445" duration="6880000" />
       <workItem from="1544604929833" duration="9180000" />
-      <workItem from="1544637640401" duration="4926000" />
+      <workItem from="1544637640401" duration="5642000" />
     </task>
     <task id="LOCAL-00001" summary=" 2 урок. Введение в PHP">
       <created>1544224392018</created>
@@ -192,7 +188,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48068000" />
+    <option name="totallyTimeSpent" value="48784000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
